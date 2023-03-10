@@ -1,0 +1,5 @@
+vendor/
+files/
+phpsql.sql
+classes/apikey.php
+classes/classPass.php
