@@ -65,11 +65,11 @@
       var password = $("input[name='forgotFormPass']").val();
       if (password.length < 8) {
         $(".passWrong").css("display","flex");
-        $(":submit").attr("disabled", true);
+        $(":submit").attr("disabled", TRUE);
       }
       else {
         $(".passWrong").css("display","none");
-        $(":submit").attr("disabled", false);
+        $(":submit").attr("disabled", FALSE);
       }
     });
     // Checks entered password and validates.
@@ -83,17 +83,17 @@
       else if (password == reEnterPassword) {
         $(".correct").css("display","flex");
         $(".wrong").css("display","none");
-        $(":submit").attr("disabled", false);
+        $(":submit").attr("disabled", FALSE);
       }
       else if (reEnterPassword.length > 0 && password.length > 0) {
         $(".correct").css("display","none");
         $(".wrong").css("display","flex");
-        $(":submit").attr("disabled", true);
+        $(":submit").attr("disabled", TRUE);
       }
       else {
         $(".correct").css("display","none");
         $(".wrong").css("display","none");
-        $(":submit").attr("disabled", true);
+        $(":submit").attr("disabled", TRUE);
       }
     });
     // Checks re-entered password and validates.
@@ -108,17 +108,17 @@
       else if (password == reEnterPassword) {
         $(".correct").css("display","flex");
         $(".wrong").css("display","none");
-        $(":submit").attr("disabled", false);
+        $(":submit").attr("disabled", FALSE);
       }
       else if (password.length >= 0 && reEnterPassword.length > 0) {
         $(".correct").css("display","none");
         $(".wrong").css("display","flex");
-        $(":submit").attr("disabled", true);
+        $(":submit").attr("disabled", TRUE);
       }
       else {
         $(".correct").css("display","none");
         $(".wrong").css("display","none");
-        $(":submit").attr("disabled", true);
+        $(":submit").attr("disabled", TRUE);
       }
     });
   });

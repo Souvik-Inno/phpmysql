@@ -142,7 +142,7 @@
      */
     public function sendMail() {
       require_once("classPass.php");
-      $mail = new PHPMailer(true);
+      $mail = new PHPMailer(TRUE);
       $pass = new Pass();
       $fromEmail = $pass->getFromEmail();
       $emailPassword = $pass->getEmailPassword();
@@ -163,7 +163,7 @@
       try {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
+        $mail->SMTPAuth = TRUE;
         $mail->Username = $fromEmail;
         $mail->Password = $emailPassword;
         $mail->SMTPSecure = 'ssl';
@@ -179,7 +179,7 @@
         // }
   
         // Content of the mail.
-        $mail->isHTML(true);
+        $mail->isHTML(TRUE);
         $mail->Subject = 'Forgot password Form';
         $mailBody = 'Please click on the following link to reset your password: <br>';
         $mailBody .= 'http://example.com/phpmysql/forgotForm.php' . '?token=' . $token;
