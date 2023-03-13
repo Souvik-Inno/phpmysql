@@ -1,5 +1,6 @@
 vendor/
 files/
+images/
 phpsql.sql
 classes/apikey.php
 classes/classPass.php
